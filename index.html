@@ -15,16 +15,36 @@
     html, body {
       height: 100%;
       width: 100%;
+      background-color: #000;
     }
 
-    body {
-      background: url('AC6CBE65-5B7D-4876-A219-A4D093F806A1.jpeg') no-repeat center center;
-      background-size: contain;
-      background-attachment: fixed;
-      font-family: Arial, sans-serif;
+    .container {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (orientation: portrait) {
+      .container img {
+        object-fit: contain;
+        height: 100vh;
+        width: auto;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <img src="site_manutencao_transfertec.png" alt="Transfertec - Em Manutenção">
+  </div>
 </body>
 </html>
