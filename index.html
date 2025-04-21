@@ -7,58 +7,35 @@
   <title>Transfertec - Site em Manutenção</title>
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
-    html, body {
+    body, html {
       height: 100%;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: white;
-    }
-
-    body {
-      background: url('site_manutencao_transfertec.png') no-repeat center center fixed;
-      background-size: cover;
+      width: 100%;
+      background-color: #000; /* fundo neutro caso a imagem demore a carregar */
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
+      align-items: center;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.5); /* leve escurecimento para destacar o texto */
-      padding: 2rem;
-      border-radius: 12px;
-      max-width: 90%;
+    .container {
+      width: 100%;
+      max-width: 100%;
     }
 
-    .texto {
-      font-size: 1.8rem;
-      font-weight: 600;
-    }
-
-    @media (min-width: 768px) {
-      .texto {
-        font-size: 2.4rem;
-        text-align: left;
-      }
-
-      .overlay {
-        max-width: 600px;
-      }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <div class="texto">
-      Estamos renovando o nosso site <br>
-      para melhorar a sua <br>
-      experiência.
-    </div>
+  <div class="container">
+    <img src="site_manutencao_transfertec.png" alt="Transfertec - Site em manutenção">
   </div>
 </body>
 </html>
